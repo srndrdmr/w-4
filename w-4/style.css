@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+  background-color: #f8e9e4;
+}
+header {
+  background-color: #e9d7f6;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.8;
+}
+header .logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #562f48;
+}
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #562f48;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    background-color:#f8efed;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.hero {
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20240709/pngtree-virtual-cloud-concept-image_15868634.jpg)
+    no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #562f48;
+}
+.hero-content {
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.hero-content h2,
+.hero-content p {
+  z-index: 3;
+}
+.ctn-btn {
+  background-color: #e9d7f6;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #d433bf;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+.ctn-btn:hover {
+  background-color: indianred;
+  color: #fff;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #562f48;
+}
+#about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.service {
+  background-color: #f8efed;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+.service:hover {
+  transform: translateY(-10px);
+}
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.service p {
+  font-size: 16px;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #ac56a8;
+}
+form button {
+  background-color: #e9d7f6;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #d433bf;
+}
+footer {
+  background-color: #e9d7f6;
+  color: #562f48;
+  padding: 20px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+  }
+  .service {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .hero-image {
+    object-position: center;
+  }
+}
